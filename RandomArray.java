@@ -25,8 +25,9 @@ public class RandomArray {
 	 */
 	
 	public void printArray(){
-		for(int i=0; i<numbers.length;i++){
-			System.out.println(numbers[i]);
+		//WRITE YOUR CODE HERE
+		for(int j=0; j<numbers.length;j++){
+			System.out.println(numbers[j]+ " ");
 		}
 	}
 	
@@ -36,10 +37,12 @@ public class RandomArray {
 	 *@return    The sum
 	 */
 	public int calSum(){
+		//WRITE YOUR CODE HERE
 		int sum = 0;
-		for(int i=0; i<numbers.length;i++){
-			sum += numbers[i];
-		}return sum;
+		for(int k=0; k<numbers.length; k++){
+			sum += numbers[k];
+		}
+		return sum;
 	}
 
 	/**
@@ -48,6 +51,7 @@ public class RandomArray {
 	 *@return    The mean
 	 */
 	public double calMean(){
+		//WRITE YOUR CODE HERE
 		int mean;
 		int sum = calSum();
 		int count = numbers.length;
@@ -60,7 +64,9 @@ public class RandomArray {
      */
     public void printReverse(){
         //WRITE YOUR CODE HERE
-        
+        for(int i=(numbers.length - 1); i >= 0; i--){
+			System.out.println(numbers[i]+" ");
+		}
     }
 	
 	/**
